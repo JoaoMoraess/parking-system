@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="parking-control">
+      <div class="title">
+        <h2>Registro de carros</h2>
+      </div>
+      <div class="flex-wrapper">
+        <div class="add-car">
+          <input id="carName" name="carName" type="text" placeholder="Nome do carro" value="" autocomplete="off"/>
+          <input id="carPlate" name="carPlate" type="text" placeholder="Placa do carro" value="" autocomplete="off"/>
+          <button id="register">Cadastrar</button>
+        </div >
+        <p id="error"></p>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Acoes</th>
+              </tr>
+            </thead>
+            <tbody id="carsTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

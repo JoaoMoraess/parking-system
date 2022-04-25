@@ -1,0 +1,93 @@
+* {
+  font-family: Verdana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  border: 1px solid blue;
+  padding: 5px;
+  padding-left: 3px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+button {
+  cursor: pointer;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  background-color: #134c69;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #134c69;
+}
+#error {
+  height: 20px;
+  color: red;
+  font-size: 14px;
+}
+.parking-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 0 30px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+}
+.flex-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.add-car {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  grid-gap: 10px;
+  padding-bottom: 10px;
+}
+.parking-control > .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+td {
+  text-align: center;
+}
+
+.table-wrapper {
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  margin-right: -15px;
+}
+
+table {
+  width: 100%;
+  overflow: hidden;
+}
+
+thead {
+  height: 35px;
+  background-color: #ccc;
+}
+
+tr {
+  height: 30px;
+}
